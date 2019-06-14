@@ -8,24 +8,15 @@ class CuboidMaker {
   }
 
   volume() {
-    return this.length * this.width * this.height;
-  }
+    return this.length * this.width * this.height; }
 
   surfaceArea() {
-    return (
-      2 *
-      (this.length * this.width +
-        this.length * this.height +
-        this.width * this.height)
-    );
-  }
-}
+    return (2 *(this.length * this.width + this.length * this.height + this.width * this.height) );}}
 
 const cuboid = new CuboidMaker({
   length: 4,
   width: 5,
-  height: 5
-});
+  height: 5 });
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(cuboid.volume()); // 100
@@ -38,23 +29,18 @@ console.log(cuboid.surfaceArea()); // 130
 
 class CubeMaker extends CuboidMaker {
   constructor(attributes) {
-    super(attributes);
-  }
+    super(attributes); }
 
   cubeMakerVolume() {
-    return this.width * this.width * this.width;
-  }
+    return this.width * this.width * this.width; }
 
   cubeMakerSurfaceArea() {
-    return 6 * this.width * this.width;
-  }
-}
+    return 6 * this.width * this.width; }}
 
 const cube = new CubeMaker({
   length: 5,
   width: 5,
-  height: 5
-});
+  height: 5 });
 
 console.log(cube.cubeMakerVolume()); // 125
 console.log(cube.cubeMakerSurfaceArea()); //150
