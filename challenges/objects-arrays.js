@@ -10,8 +10,7 @@ const tyrannosaurus = {
   "diet": "carnivorous",
   "weight": "700kg",
   "length": "12m",
-  "period": "Late Cretaceous"
-}
+  "period": "Late Cretaceous" }
 
 tyrannosaurus.roar = function ()
 {return "RAWERSRARARWERSARARARRRR!"};
@@ -20,15 +19,13 @@ const stegosaurus = {
   "diet": "herbivorous",
   "weight": "2000kg",
   "length": "9m",
-  "period": "Late Jurassic"
-}
+  "period": "Late Jurassic" }
 
 const velociraptor = {
   "diet": "carnivorous",
   "weight": "15kg",
   "length": "1.8m",
-  "period": "Late Cretaceous"
-}
+  "period": "Late Cretaceous" }
 
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
@@ -77,10 +74,7 @@ Once you have the new array created, sort the universities alphabetically and lo
 const universities = [];
 
 graduates.forEach((graduate) =>
-{universities.push (graduate.university);
-
-}); 
-
+{universities.push (graduate.university); }); 
 console.log(universities)
 
 const universitiesABC = universities.sort();
@@ -97,8 +91,7 @@ Log the result of your new array. */
 const contactInfo = [];
 
 graduates.forEach((student) =>
-{contactInfo.push ((student.first_name) + ' ' + (student.email));
-});
+{contactInfo.push ((student.first_name) + ' ' + (student.email)); });
 
 console.log(contactInfo);
 
@@ -109,8 +102,7 @@ const uni = [];
 
 for (i = 0; i < graduates.length; i++) {
   if (graduates[i].university.includes('Uni')){
-  uni.push(graduates[i].university);}
-  }
+  uni.push(graduates[i].university);} }
 
 console.log(uni);
 
@@ -139,8 +131,8 @@ The zoo wants to display both the scientific name and the animal name in front o
 const animalNames = [];
 
 zooAnimals.forEach((animal) =>
-{animalNames.push (('Name: ') + (animal.animal_name) + ' ' + ('Scientific: ') + (animal.scientific_name));}
-);
+{animalNames.push (('Name: ') + (animal.animal_name) + ' ' + ('Scientific: ') + (animal.scientific_name));} );
+
 console.log(animalNames);
 
 
@@ -167,10 +159,7 @@ let lowerPopulation = [];
 
 lowerPopulation = zooAnimals.filter((count) => 
 {if (count.population < 5)
-{return count;}
-
-});
-
+{return count;} });
 
 console.log(lowerPopulation);
 
@@ -179,13 +168,12 @@ console.log(lowerPopulation);
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = 0;
+const populationTotal = [];
 
 zooAnimals.reduce((acc, item, idx ) =>
 {acc = acc + item.population
 console.log('total population', acc, 'item', item.population, 'idx', idx)
 return acc}, 0)
-
 
 console.log(populationTotal);
 
